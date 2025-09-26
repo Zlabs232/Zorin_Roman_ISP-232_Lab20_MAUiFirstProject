@@ -4,7 +4,10 @@ public partial class AboutPage : ContentPage
 {
 	private async void LearnMore_Clicked(object sender, EventArgs e)
 	{
-		await Launcher.Default.OpenAsync("https://aka.ms/maui");
+		if(BindingContext is Models.About about)
+		{
+			await Launcher.Default.OpenAsync(about.MoreInfoUrl);
+		}
 	}
 	public AboutPage()
 	{
