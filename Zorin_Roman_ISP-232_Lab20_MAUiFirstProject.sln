@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zorin_Roman_ISP-232_Lab20_MAUiFirstProject", "Zorin_Roman_ISP-232_Lab20_MAUiFirstProject.csproj", "{4F60DE4E-39B3-4033-9741-B4A2148D29C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F60DE4E-39B3-4033-9741-B4A2148D29C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F60DE4E-39B3-4033-9741-B4A2148D29C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F60DE4E-39B3-4033-9741-B4A2148D29C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F60DE4E-39B3-4033-9741-B4A2148D29C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BB59A31-BCD8-4F69-9287-796C094C6B43}
+	EndGlobalSection
+EndGlobal

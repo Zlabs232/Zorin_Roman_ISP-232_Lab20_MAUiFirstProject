@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Zorin_Roman_ISP_232_Lab20_MAUiFirstProject.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Zorin_Roman_ISP_232_Lab20_MAUiFirstProject"
+    Title="Zorin_Roman_ISP_232_Lab20_MAUiFirstProject">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>
