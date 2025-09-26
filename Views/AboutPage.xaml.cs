@@ -1,4 +1,4 @@
-namespace Zorin_Roman_ISP_232_Lab20_MAUiFirstProject;
+namespace Zorin_Roman_ISP_232_Lab20_MAUiFirstProject.Views;
 
 public partial class AboutPage : ContentPage
 {
