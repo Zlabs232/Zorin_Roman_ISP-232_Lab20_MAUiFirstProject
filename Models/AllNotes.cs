@@ -26,7 +26,7 @@ namespace Zorin_Roman_ISP_232_Lab20_MAUiFirstProject.Models
 
             foreach (Note note in notes)
             {
-                Notes.Add
+                Notes.Add(note);
             }
         }
     }
