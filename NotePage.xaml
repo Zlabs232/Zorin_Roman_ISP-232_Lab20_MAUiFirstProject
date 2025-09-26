@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zorin_Roman_ISP_232_Lab20_MAUiFirstProject.NotePage"
+             Title="NotePage">
+    <VerticalStackLayout Spacing="10" Margin="5">
+        <Editor x:Name="TextEditor"
+                Placeholder="Введите вашу заметку: "
+                HeightRequest="100" />
+
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="4">
+            <Button Text="Сохранить"
+                    Clicked="SaveButton_CLicked" />
+
+            <Button Grid.Column="1"
+                    Text="Удалить"
+                    Clicked="DeleteButton_Clicked" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
