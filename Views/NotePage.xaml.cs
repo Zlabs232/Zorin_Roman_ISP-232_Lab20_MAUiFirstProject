@@ -1,9 +1,12 @@
 namespace Zorin_Roman_ISP_232_Lab20_MAUiFirstProject.Views;
 
+[QueryProperty(nameof(ItemId), nameof(ItemId))]
 public partial class NotePage : ContentPage
 {
-	string _fileName = Path.Combine(FileSystem.AppDataDirectory, "notes.txt");
-
+	public string ItemId
+	{
+		set { LoadNote(value); }
+	}
 	public void LoadNote(string fileName)
 	{
 		Models.Note noteModel = new Models.Note();
@@ -28,16 +31,22 @@ public partial class NotePage : ContentPage
 		LoadNote(Path.Combine(appDataPath, randomFileName));
 	}
 
-	public void SaveButton_Clicked(object sender, EventArgs e)
-	{
-		File.WriteAllText(_fileName, TextEditor.Text);
-	}
+    private async void SaveButton_Clicked(object sender, EventArgs e)
+    {
+        if (BindingContext is Models.Note note)
+            File.WriteAllText(note.Filename, TextEditor.Text);
 
-	public void DeleteButton_Clicked(object sender, EventArgs e)
-	{
-		if(File.Exists(_fileName))
-			File.Delete(_fileName);
+        await Shell.Current.GoToAsync("..");
+    }
 
-		TextEditor.Text = string.Empty;
-	}
+    private async void DeleteButton_Clicked(object sender, EventArgs e)
+    {
+        if (BindingContext is Models.Note note)
+        {
+            if (File.Exists(note.Filename))
+                File.Delete(note.Filename);
+        }
+
+        await Shell.Current.GoToAsync("..");
+    }
 }
